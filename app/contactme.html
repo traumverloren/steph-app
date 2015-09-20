@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="contact-me">
+  <style>
+    :host {
+      display: block;
+    }
+  </style>
+  <template>
+        <h2 class="paper-font-display2">Contact Me</h2>
+        <p>This is the blah section</p>
+  </template>
+
+  <script>
+    (function() {
+      Polymer({
+        is: 'contact-me',
+
+        properties: {
+          greeting: {
+            type: String,
+            value: 'Welcome!',
+            notify: true
+          }
+        }
+      });
+    })();
+  </script>
+</dom-module>
